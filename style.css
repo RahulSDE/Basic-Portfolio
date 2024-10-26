@@ -27,7 +27,7 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
 #intro{
-    padding: 4rem 1rem 5rem 1rem; /*trbl*/
+    padding: 4rem 1rem 5rem 1rem; /*trbl (top right bottom left)*/
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -54,7 +54,7 @@ h1,h2,h3,h4,h5,h6{
     font-size: 1.2rem;
 }
 #experience li{
-    list-style-type: none; /* this attribute is used to do the listing of items in the way specifed after column */
+    list-style-type: none; /* this attribute is used to do the listing of items in the way specifed after colon. */
     padding: 1rem;
 }
 #experience a{
@@ -62,7 +62,7 @@ h1,h2,h3,h4,h5,h6{
 }
 #hire{
     width: 400px;
-    text-align: center;
+    text-align: center; /* It aligns the text in the content-area in the specified way. */
     margin: 0 auto;
     padding: 3rem 0;
 }
@@ -169,14 +169,16 @@ footer{
 
     * Every heading inside your html file has a by default margin of "1em" assigned to that.
     * There are two measurement unit 
-            1) em 
-            2) rem
+            1) em - em is a css unit relative to the font-size of the parent element.
+                  - em values are relative to the font-size of the nearest parent element.
+            2) rem - rem is a css unit relative to the font-size of the html element or root font-size.
+                   - when the root font-size is not explicitly set, rem values are relative to the browser's default font size of 16px.
     * Even if we give 0 margin to any html element , even then they will not collide with other html element.
       WHY???
         -> jab do adjacent html elements ko margin provide kiya jata hai to vertical direction unka margin add nhi 
            hota bulki dono element me se jika margin bada hai wo margin vertical direction me apply ho jata hai.  
                 ----Article(StackOverflow.com)
 
-    * responsive web app means for different types of screen, you are going to get different types of css style.
+    * responsive web pages means for different types of screen, you are going to get different types of css style.
     * 
 */
